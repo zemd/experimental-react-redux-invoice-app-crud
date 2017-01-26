@@ -1,0 +1,58 @@
+/*@import "../node_modules/normalize.css/normalize.css";*/
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+.loader {
+  margin: 60px auto;
+  font-size: 15px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(144, 238, 144, 0.5);
+  border-right: 1.1em solid rgba(144, 238, 144, 0.5);
+  border-bottom: 1.1em solid rgba(144, 238, 144, 0.5);
+  border-left: 1.1em solid #ffffff;
+  transform: translateZ(0);
+  animation: spinner 1.1s infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-action {
+  margin: 0 5px;
+}
+
+.column-actions {
+  width: 25%;
+}
+
+.form-row {
+  display: flex;
+}
+
+.input-count {
+  width: 40px;
+}
+
+a.active,
+a.active:hover,
+.navbar-default .navbar-nav > li > a.active:hover {
+  color: #555 !important;
+  background-color: #e7e7e7 !important;
+}
